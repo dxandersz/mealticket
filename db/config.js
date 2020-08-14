@@ -14,10 +14,11 @@ function setDatabase() {
         return pgp({
             database: DB_NAME,
             port: 5432,
-            host: 'localhost',
-            user: 'postgres',
-            password:  'my_postgres_password'
+            host: 'localhost'
         });
+    }
+    else {
+        return pgp(process.env.DATABASE_URL)
     }
 }
 
