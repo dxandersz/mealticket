@@ -5,6 +5,8 @@ const recipeController = require('../controllers/recipes-controller.js')
 
 recipeRouter.get('/', recipeController.index);
 
-recipeRouter.get('/add', (req, res) => {
+recipeRouter.get('/index', (req, res) => {
     res.render('mealticket/')
-})
+});
+
+module.exports = recipeRouter;
