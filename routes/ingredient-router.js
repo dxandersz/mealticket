@@ -6,7 +6,7 @@ const ingredientController = require('../controllers/ingredient-controller.js');
 ingredientRouter.get('/', ingredientController.index);
 
 ingredientRouter.get('/index', (req, res) => {
-    res.render('mealticket/index');
+    res.render('ingredients/index');
 });
 
 module.exports = ingredientRouter;
