@@ -32,15 +32,17 @@ app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);    
 });
 
-//
+// Tells the server to start by rendering the index.
 app.get('/', (req, res) => {
     res.render('index', {
         appName: 'mealticket',
     });
 });
 
+// Establishes the router for out Mealticket views. Will need to link these up for each router.
 app.use('/mealticket', recipeRouter);
 
+// Handling for error messages.
 app.use('*', (req, res) => {
     res.status(404).send({
         error: 'Not Found',
