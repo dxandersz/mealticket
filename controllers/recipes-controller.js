@@ -1,25 +1,15 @@
 const Recipe = require('../models/Recipe');
 
-const recipeController = {};
-
-recipeController.index = (req, res, next) => {
-    Recipe.getAll()
-        .then((recipes) => {
-            res.render('mealticket/index', {
-                message: 'ok',
-                data: { recipes },
-            });
-        })
-        .catch(next);
+const recipeController = {
+    async index(req, res, next) {
+        const recipes = await recipes.getAll();
+        res.render('mealticket/index', {
+            header: 'Check out the recipes!',
+            recipes,
+        });
+    }
 };
 
-recipeController.show = (req, res, next) => {
-    Recipe.getById(req.params.id)
-    .then((recipe) => {
-        res.locals.recipe = recipe;
-        next();
-    })
-    .catch(next);
-};
+
 
 module.exports = recipeController;

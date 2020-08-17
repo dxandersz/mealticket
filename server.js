@@ -41,6 +41,8 @@ app.get('/', (req, res) => {
 
 // Establishes the router for out Mealticket views. Will need to link these up for each router.
 app.use('/mealticket', recipeRouter);
+app.use('/ingredients', ingredientRouter);
+app.use('/shopping_lists', shoppingListRouter);
 
 // Handling for error messages.
 app.use('*', (req, res) => {
