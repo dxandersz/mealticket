@@ -13,4 +13,13 @@ recipeController.index = (req, res, next) => {
         .catch(next);
 };
 
+recipeController.show = (req, res, next) => {
+    Recipe.getById(req.params.id)
+    .then((recipe) => {
+        res.locals.recipe = recipe;
+        next();
+    })
+    .catch(next);
+};
+
 module.exports = recipeController;

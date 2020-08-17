@@ -10,12 +10,12 @@ class Recipe {
 
     static getAll() {
         return db
-        .manyOrNone('SELECT * FROM recipes ORDER BY id ASC')
-        .then((recipes) => {
-            return recipes.map((recipe) => {
-                return new this(recipe);
+            .manyOrNone('SELECT * FROM recipes ORDER BY id ASC')
+            .then((recipes) => {
+                return recipes.map((recipe) => {
+                    return new this(recipe);
+                });
             });
-        });
     }
 }
 
