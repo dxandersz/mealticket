@@ -6,11 +6,11 @@ An ingredient tracking app that draws recipes from TheMealDB and lets users save
 ## Documentation
 ### Wireframes
     ![Wireframe One](/assets/images/wireframe-1.jpg)
-    ![Wireframe One](/assets/images/wireframe-1.jpg)
-    ![Wireframe One](/assets/images/wireframe-1.jpg)
-    ![Wireframe One](/assets/images/wireframe-1.jpg)
-    ![Wireframe One](/assets/images/wireframe-1.jpg)
-    ![Wireframe One](/assets/images/wireframe-1.jpg)
+    ![Wireframe Two](/assets/images/wireframe-2.jpg)
+    ![Wireframe Three](/assets/images/wireframe-3.jpg)
+    ![Wireframe Four](/assets/images/wireframe-4.jpg)
+    ![Wireframe Five](/assets/images/wireframe-5.jpg)
+    ![Wireframe Six](/assets/images/wireframe-6.jpg)
 
 
 ## Specs
